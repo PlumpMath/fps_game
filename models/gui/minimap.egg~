@@ -1,0 +1,54 @@
+<CoordinateSystem> { Z-down }
+
+<Comment> { "Egg laid by Chicken for Blender, version R85" }
+
+<Texture> minimap.png {
+  "./../../../../../bilder/texturen/minimap.tif"
+  <Scalar> saved-result { 1 }
+  <Scalar> envtype { MODULATE }
+  <Scalar> minfilter { LINEAR }
+  <Scalar> magfilter { LINEAR }
+  <Scalar> wrap { REPEAT }
+}
+<Group> Plane {
+  <VertexPool> Plane {
+    <Vertex> 0 {
+      1.0 0.999999940395 0.0
+      <UV>  {
+        0.000000 0.000000
+        <Tangent> { 1.000000 -0.000000 0.000000 }
+        <Binormal> { -0.000000 -1.000000 -0.000000 }
+      }
+    }
+    <Vertex> 1 {
+      -0.999999642372 1.00000035763 0.0
+      <UV>  {
+        1.000000 0.000000
+        <Tangent> { 1.000000 -0.000000 0.000000 }
+        <Binormal> { -0.000000 -1.000000 -0.000000 }
+      }
+    }
+    <Vertex> 2 {
+      -1.00000011921 -0.999999821186 0.0
+      <UV>  {
+        1.000000 1.000000
+        <Tangent> { 1.000000 -0.000000 0.000000 }
+        <Binormal> { -0.000000 -1.000000 -0.000000 }
+      }
+    }
+    <Vertex> 3 {
+      1.0 -1.0 0.0
+      <UV>  {
+        0.000000 1.000000
+        <Tangent> { 1.000000 0.000000 0.000000 }
+        <Binormal> { 0.000000 -1.000000 -0.000000 }
+      }
+    }
+  }
+  <Polygon> {
+    <TRef> { minimap.png }
+    <Normal> { 0.000000 -0.000000 1.000000
+    }
+    <VertexRef> { 0 1 2 3 <Ref> { Plane } }
+  }
+}
